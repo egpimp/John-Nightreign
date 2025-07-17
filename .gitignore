@@ -73,3 +73,19 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+#Ensures RoR2 assemblies are not redistributed accidentally
+John-Nightreign/[Pp]ackages/[Rr]isk of Rain 2/*.dll
+John-Nightreign/[Pp]ackages/[Rr]isk of Rain 2/[Pp]lugins/*.dll
+
+#Client side only thunderkit related files.
+John-Nightreign/Assets/ThunderKitSettings/EditorInspectorSettings.asset
+John-Nightreign/Assets/ThunderKitSettings/RoR2.asset
+John-Nightreign/Assets/ThunderKitSettings/Logs/*
+John-Nightreign/Assets/ThunderKitSettings/ThunderKit Extensions.asset
+John-Nightreign/ThunderKit/
+
+#Ensures mod dependencies such as R2API and others are not explicitly added to the github repository to avoid unecesary redistribution
+John-Nightreign/Packages/*
+John-Nightreign/Packages/packages-lock.json
+John-Nightreign/Packages/manifest.json
