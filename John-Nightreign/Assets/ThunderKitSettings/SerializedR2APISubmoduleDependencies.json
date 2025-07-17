@@ -1,0 +1,14 @@
+﻿{
+    "hardDependencies": [
+        "RiskofThunder-R2API_Core",
+        "RiskofThunder-R2API_ContentManagement",
+        "RiskofThunder-R2API_CharacterBody",
+        "RiskofThunder-R2API_Loadout",
+        "RiskofThunder-R2API_Networking",
+        "RiskofThunder-R2API_Prefab",
+        "RiskofThunder-R2API_Skills",
+        "RiskofThunder-R2API_Skins",
+        "RiskofThunder-R2API_TempVisualEffect",
+        "RiskofThunder-R2API_Unlockable"
+    ]
+}
