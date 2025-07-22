@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1627637702, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-  m_Name: sfNightfarerPrimary
+  m_Name: sfNightfarerPassive
   m_EditorClassIdentifier: 
   variants:
-  - skillDef: {fileID: 11400000, guid: 1df772f7b95d823449c094726f441c8b, type: 2}
+  - skillDef: {fileID: 0}
+    unlockableName: 
+    unlockableDef: {fileID: 0}
+  - skillDef: {fileID: 0}
     unlockableName: 
     unlockableDef: {fileID: 0}
   defaultVariantIndex: 0

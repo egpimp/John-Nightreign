@@ -1,6 +1,7 @@
 using BepInEx;
 using System.IO;
 using UnityEngine;
+
 namespace JohnNightreign
 {
     #region Dependencies
