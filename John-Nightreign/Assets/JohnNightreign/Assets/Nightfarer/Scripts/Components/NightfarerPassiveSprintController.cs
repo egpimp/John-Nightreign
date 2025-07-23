@@ -18,7 +18,6 @@ namespace JohnNightreign.Components
             Stage.onServerStageBegin += ResetPassive;
         }
 
-        [Server]
         void ResetPassive(Stage stage)
         {
             canSurvive = true;

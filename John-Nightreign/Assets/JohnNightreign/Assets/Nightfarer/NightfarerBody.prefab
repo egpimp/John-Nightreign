@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 6070902090718255253}
   - component: {fileID: 763631439399457673}
   - component: {fileID: 6433054734762230335}
+  - component: {fileID: 3334102648873571513}
   - component: {fileID: 4847544776752371312}
   - component: {fileID: 7809369826781325298}
   - component: {fileID: 2368622400751212667}
@@ -647,6 +648,24 @@ MonoBehaviour:
   mainStateType:
     _typeName: EntityStates.Idle, RoR2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   debug: 0
+--- !u!114 &3334102648873571513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761638053140501122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 298587437, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _skillFamily: {fileID: 11400000, guid: 701d4e1d9cfde6647a2f4b9645ca7c1a, type: 2}
+  skillName: Passive
+  hideInCharacterSelect: 0
+  baseStock: 0
+  baseRechargeStopwatch: 0
+  hasExecutedSuccessfully: 0
 --- !u!114 &4847544776752371312
 MonoBehaviour:
   m_ObjectHideFlags: 0

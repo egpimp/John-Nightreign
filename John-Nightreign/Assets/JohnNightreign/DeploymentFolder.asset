@@ -1,6 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-513165396031176507
+--- !u!114 &-5509597135363078223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebc722807299b54bb8733330087d5e3, type: 3}
+  m_Name: Constant
+  m_EditorClassIdentifier: 
+  Value: C:\Program Files (x86)\Steam\steamapps\common\Risk of Rain 2\BepInEx\plugins
+--- !u!114 &-4905258332439730060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25,18 +38,5 @@ MonoBehaviour:
   m_Name: DeploymentFolder
   m_EditorClassIdentifier: 
   Data:
-  - {fileID: 4841357990110210764}
-  - {fileID: -513165396031176507}
---- !u!114 &4841357990110210764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cebc722807299b54bb8733330087d5e3, type: 3}
-  m_Name: Constant
-  m_EditorClassIdentifier: 
-  Value: C:\Program Files (x86)\Steam\steamapps\common\Risk of Rain 2\BepInEx\plugins
+  - {fileID: -5509597135363078223}
+  - {fileID: -4905258332439730060}
