@@ -843,8 +843,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 0.55
+  m_Height: 2.01
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3885729495129294696
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 7455229913542130130}
   - component: {fileID: 8740726379209755580}
   m_Layer: 0
-  m_Name: mdlStandingTemplate
+  m_Name: mdlNightfarer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,7 +1063,9 @@ MonoBehaviour:
   m_Script: {fileID: -226763392, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transformPairs: []
+  transformPairs:
+  - name: MainHurtbox
+    transform: {fileID: 13539778222034966}
 --- !u!114 &4939356630096832896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1098,7 @@ MonoBehaviour:
   baseFootliftString: 
   sprintFootstepOverrideString: 
   sprintFootliftOverrideString: 
-  enableFootstepDust: 1
+  enableFootstepDust: 0
   footstepDustPrefab: {fileID: 1661911480974694, guid: 42a3a39a794d87f4d983ceb8aa37e8ec, type: 2}
   inLava: 0
 --- !u!114 &5487575337884123359
@@ -1164,7 +1166,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
   _avatar: {fileID: 0}
-  skins: []
+  skins:
+  - {fileID: 11400000, guid: 0ba87f0de321c824cb258d7c9b41598e, type: 2}
   prefabInstantiationDatas: []
 --- !u!114 &8740726379209755580
 MonoBehaviour:

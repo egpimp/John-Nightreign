@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: -1881990681, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: Nightfarer
   m_EditorClassIdentifier: 
-  bodyPrefab: {fileID: 761638053140501122, guid: 63b1569154481324e80866c9d7585b28, type: 3}
+  bodyPrefab: {fileID: 761638053140501122, guid: ab9ff1fe19a2dfe41aad88bcc3402a04, type: 3}
   displayPrefab: {fileID: 761638053140501122, guid: 63b1569154481324e80866c9d7585b28, type: 3}
   unlockableName: 
   unlockableDef: {fileID: 0}
