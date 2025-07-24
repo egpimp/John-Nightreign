@@ -11,30 +11,30 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - FakeActor
+  - NoCollision
+  - Pickups
+  - World
+  - EntityPrecise
+  - Debris
+  - Projectile
+  - CollideWithCharacterHullOnly
+  - ManualRender
+  - Ragdoll
+  - NoDraw
+  - PrefabBrush
+  - PostProcess
+  - UI, Worldspace
+  - PlayerBody
+  - EnemyBody
+  - TriggerZone
+  - SplitscreenPlayerMain
+  - SplitscreenPlayer2
+  - SplitscreenPlayer3
+  - SplitscreenPlayer4
+  - ProjectileWorldOnly
+  - EnemyBarrier
+  - PlayerFakeActor
   - 
   - 
   m_SortingLayers:

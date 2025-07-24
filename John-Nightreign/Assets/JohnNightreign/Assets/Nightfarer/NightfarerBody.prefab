@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1875662846676433067}
   - component: {fileID: 2060213107667412606}
   - component: {fileID: 5455511161920956674}
-  - component: {fileID: 7821645116727654003}
+  - component: {fileID: 3863908008510312536}
   - component: {fileID: 1196559596587717045}
   - component: {fileID: 555167995350593330}
   - component: {fileID: 8727561005262610257}
@@ -124,134 +124,9 @@ MonoBehaviour:
     i13: 0
     i14: 0
     i15: 0
-  m_ServerOnly: 1
+  m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
 --- !u!114 &2060213107667412606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761638053140501122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -197296741, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bodyIndex: -1
-  altDeathEventBodyIndex: -1
-  CharacterIsVisible: 0
-  cost: -1
-  dontCull: 0
-  BaseImportance: 0
-  Importance: -1
-  inLava: 0
-  baseNameToken: JNR_NIGHTFARER_BODY_NAME
-  subtitleNameToken: JNR_NIGHTFARER_BODY_SUBTITLE
-  bodyFlags: 0
-  lavaCooldown: 0.2
-  rootMotionInMainState: 0
-  mainRootSpeed: 0
-  baseMaxHealth: 200
-  baseRegen: 1
-  baseMaxShield: 0
-  baseMoveSpeed: 7
-  baseAcceleration: 60
-  baseJumpPower: 15
-  baseDamage: 12
-  baseAttackSpeed: 1
-  baseCrit: 1
-  baseArmor: 0
-  baseVisionDistance: Infinity
-  baseJumpCount: 1
-  sprintingSpeedMultiplier: 1.45
-  autoCalculateLevelStats: 1
-  levelMaxHealth: 60
-  levelRegen: 0.2
-  levelMaxShield: 0
-  levelMoveSpeed: 0
-  levelJumpPower: 0
-  levelDamage: 2.4
-  levelAttackSpeed: 0
-  levelCrit: 0
-  levelArmor: 0
-  amputatedMaxHealth: 0
-  amputateMaxHealthMinimum: 1
-  extraSecondaryFromSkill: 0
-  extraSpecialFromSkill: 0
-  increaseDamageOnMultiKillItemDisplayUpdater: {fileID: 0}
-  allSkillsDisabled: 0
-  isTeleporting: 0
-  boostAllStatsDisplay: {fileID: 0}
-  currentGrowthNectarBuffCount: 0
-  maxGrowthNectarBuffCount: 0
-  wasLucky: 0
-  spreadBloomDecayTime: 0.7
-  spreadBloomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.35059357
-      value: 0.008666992
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 2
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _defaultCrosshairPrefab: {fileID: 0}
-  hideCrosshair: 0
-  canAddIncrasePrimaryDamage: 0
-  knockBackFinGroundedTimer: 0
-  runicLensPosition: {x: 0, y: 0, z: 0}
-  meteorVictimBody: {fileID: 0}
-  runicLensStartTime: 0
-  runicLensImpactTime: 0
-  runicLensMeteorReady: 0
-  spawnedPickupCount: 0
-  aimOriginTransform: {fileID: 424352304705806608}
-  hullClassification: 0
-  portraitIcon: {fileID: 0}
-  bodyColor: {r: 1, g: 1, b: 1, a: 1}
-  doNotReassignToTeamBasedCollisionLayer: 0
-  isChampion: 0
-  altDeathBodyName: 
-  currentVehicle: {fileID: 0}
-  preferredPodPrefab: {fileID: 0}
-  preferredInitialStateType:
-    _typeName: EntityStates.GenericCharacterMain, RoR2, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  skinIndex: 0
-  requestEquipmentFire: 0
-  customKillTotalStatName: 
-  overrideCoreTransform: {fileID: 0}
---- !u!114 &5455511161920956674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761638053140501122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1549848242, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveVector: {x: 0, y: 0, z: 0}
-  rawMoveData: {x: 0, y: 0}
---- !u!114 &7821645116727654003
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,6 +154,113 @@ MonoBehaviour:
   useHangtimeGravity: 0
   _flightParameters:
     channeledFlightGranterCount: 0
+--- !u!114 &5455511161920956674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761638053140501122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1549848242, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveVector: {x: 0, y: 0, z: 0}
+  rawMoveData: {x: 0, y: 0}
+--- !u!114 &3863908008510312536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761638053140501122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -197296741, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIndex: -1
+  altDeathEventBodyIndex: -1
+  CharacterIsVisible: 0
+  cost: -1
+  dontCull: 0
+  BaseImportance: 0
+  Importance: -1
+  inLava: 0
+  baseNameToken: JNR_NIGHTFARER_BODY_NAME
+  subtitleNameToken: JNR_NIGHTFARER_BODY_DESC
+  bodyFlags: 16
+  lavaCooldown: 0.2
+  rootMotionInMainState: 0
+  mainRootSpeed: 0
+  baseMaxHealth: 200
+  baseRegen: 1
+  baseMaxShield: 0
+  baseMoveSpeed: 7
+  baseAcceleration: 60
+  baseJumpPower: 15
+  baseDamage: 12
+  baseAttackSpeed: 1
+  baseCrit: 1
+  baseArmor: 12
+  baseVisionDistance: Infinity
+  baseJumpCount: 1
+  sprintingSpeedMultiplier: 1.45
+  autoCalculateLevelStats: 1
+  levelMaxHealth: 60
+  levelRegen: 0.2
+  levelMaxShield: 0
+  levelMoveSpeed: 0
+  levelJumpPower: 0
+  levelDamage: 2.4
+  levelAttackSpeed: 0
+  levelCrit: 0
+  levelArmor: 0
+  amputatedMaxHealth: 0
+  amputateMaxHealthMinimum: 1
+  extraSecondaryFromSkill: 0
+  extraSpecialFromSkill: 0
+  increaseDamageOnMultiKillItemDisplayUpdater: {fileID: 0}
+  allSkillsDisabled: 0
+  isTeleporting: 0
+  boostAllStatsDisplay: {fileID: 0}
+  currentGrowthNectarBuffCount: 0
+  maxGrowthNectarBuffCount: 0
+  wasLucky: 0
+  spreadBloomDecayTime: 0.45
+  spreadBloomCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _defaultCrosshairPrefab: {fileID: 0}
+  hideCrosshair: 0
+  canAddIncrasePrimaryDamage: 0
+  knockBackFinGroundedTimer: 0
+  runicLensPosition: {x: 0, y: 0, z: 0}
+  meteorVictimBody: {fileID: 0}
+  runicLensStartTime: 0
+  runicLensImpactTime: 0
+  runicLensMeteorReady: 0
+  spawnedPickupCount: 0
+  aimOriginTransform: {fileID: 424352304705806608}
+  hullClassification: 0
+  portraitIcon: {fileID: 0}
+  bodyColor: {r: 0.37624598, g: 0.40330234, b: 0.8962264, a: 0}
+  doNotReassignToTeamBasedCollisionLayer: 0
+  isChampion: 0
+  altDeathBodyName: 
+  currentVehicle: {fileID: 0}
+  preferredPodPrefab: {fileID: 0}
+  preferredInitialStateType:
+    _typeName: EntityStates.GenericCharacterMain, RoR2, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  skinIndex: 0
+  requestEquipmentFire: 0
+  customKillTotalStatName: 
+  overrideCoreTransform: {fileID: 0}
 --- !u!114 &1196559596587717045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +383,7 @@ MonoBehaviour:
   dontShowHealthbar: 0
   isDefaultGodMode: 0
   globalDeathEventChanceCoefficient: 1
-  body: {fileID: 2060213107667412606}
+  body: {fileID: 0}
   forceCulled: 0
 --- !u!114 &262572540477571185
 MonoBehaviour:
@@ -811,7 +793,7 @@ GameObject:
   - component: {fileID: 13539778222034966}
   - component: {fileID: 6553121441675396187}
   - component: {fileID: 3885729495129294696}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MainHurtBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1024,7 +1006,7 @@ MonoBehaviour:
   m_Script: {fileID: 1143142494, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 2060213107667412606}
+  body: {fileID: 0}
   itemDisplayRuleSet: {fileID: 0}
   autoPopulateLightInfos: 1
   gameObjectActivationTransforms: []
