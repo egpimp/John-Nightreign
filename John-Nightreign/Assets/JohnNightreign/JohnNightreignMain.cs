@@ -26,6 +26,17 @@ namespace JohnNightreign
             pluginInfo = Info;
             new JohnNightreignContent();
         }
+
+        private void OnEnable()
+        {
+            Hooks.Init();
+        }
+
+        private void OnDisable()
+        {
+            Hooks.Remove();
+        }
+
         internal static void LogFatal(object data)
         {
             instance.Logger.LogFatal(data);

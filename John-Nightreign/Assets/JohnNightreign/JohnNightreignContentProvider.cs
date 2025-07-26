@@ -2,7 +2,7 @@ using RoR2.ContentManagement;
 using UnityEngine;
 using RoR2;
 using System.Collections;
-using RoR2.Skills;
+using static JohnNightreign.Content.Assets;
 
 namespace JohnNightreign.Content
 {
@@ -16,7 +16,6 @@ namespace JohnNightreign.Content
         private static AssetBundle _bundle;
         private static SurvivorDef _nightfarerSurvivorDef;
         private static GameObject _nightfarerBody;
-        private static SkillFamily[] _nightfarerFamilies;
 
         public IEnumerator LoadStaticContentAsync(LoadStaticContentAsyncArgs args)
         {
@@ -30,8 +29,12 @@ namespace JohnNightreign.Content
             _bundle = asyncOperation.assetBundle;
             _nightfarerSurvivorDef = _bundle.LoadAsset<SurvivorDef>("Nightfarer");
             _nightfarerBody = _bundle.LoadAsset<GameObject>("NightfarerBody");
+            stampBuffDef = _bundle.LoadAsset<BuffDef>("NightfarerStamp");
+            revengeBuffDef = _bundle.LoadAsset<BuffDef>("NightfarerRevenge");
+            surviveBuffDef = _bundle.LoadAsset<BuffDef>("NightfarerSurvive");
             JohnNightreignContentPack.survivorDefs.Add(new SurvivorDef[] { _nightfarerSurvivorDef });
             JohnNightreignContentPack.bodyPrefabs.Add(new GameObject[] { _nightfarerBody });
+            JohnNightreignContentPack.buffDefs.Add(new BuffDef[] { stampBuffDef, revengeBuffDef, surviveBuffDef });
         }
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)
         {

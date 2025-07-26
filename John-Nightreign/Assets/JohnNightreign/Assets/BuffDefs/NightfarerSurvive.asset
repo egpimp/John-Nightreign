@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: -1783169300, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: NightfarerSurvive
   m_EditorClassIdentifier: 
-  iconPath: Textures/ItemIcons/texNullIcon
-  iconSprite: {fileID: 0}
-  buffColor: {r: 0, g: 0.44705883, b: 1, a: 1}
+  iconPath: 
+  iconSprite: {fileID: 21300000, guid: ee4c181c0ceacf4449db131e6a817ee8, type: 3}
+  buffColor: {r: 0, g: 0, b: 0, a: 1}
   canStack: 0
   eliteDef: {fileID: 0}
   isDebuff: 0

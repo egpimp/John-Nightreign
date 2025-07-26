@@ -27,9 +27,7 @@ namespace JohnTestreign
 
             //Write code here to initialize your mod post assetbundle load
             _bundle = asyncOperation.assetBundle;
-            Debug.LogError(_bundle);
             _testDef = _bundle.LoadAsset<SkillDef>("TestreignSkillDef");
-            Debug.LogError(_testDef);
             JohnTestreignContentPack.skillDefs.Add(new SkillDef[] { _testDef });
         }
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)

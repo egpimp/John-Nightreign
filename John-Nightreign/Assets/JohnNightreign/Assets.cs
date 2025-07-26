@@ -1,18 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using RoR2;
 
-public class Assets : MonoBehaviour
+namespace JohnNightreign.Content
 {
-    // Start is called before the first frame update
-    void Start()
+    public static class Assets
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        internal static BuffDef stampBuffDef;
+        internal static BuffDef revengeBuffDef;
+        internal static BuffDef surviveBuffDef;
     }
 }
