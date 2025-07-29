@@ -17,7 +17,6 @@ namespace JohnNightreign.Skills
 
         public override BaseSkillInstanceData OnAssigned([NotNull] GenericSkill skillSlot)
         {
-            Debug.LogError(skillName);
             if (skillName == "sdNightfarerPassiveSprint") sprintPassive = true;
             else skillSlot.characterBody.AddBuff(Content.Assets.surviveBuffDef);
             return base.OnAssigned(skillSlot);

@@ -43,4 +43,4 @@ MonoBehaviour:
   autoHandleLuminousShot: 1
   hideStockCount: 1
   stepCount: 4
-  stepGraceDuration: 0.3
+  stepGraceDuration: 1.6
