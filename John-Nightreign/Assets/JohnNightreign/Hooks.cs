@@ -1,6 +1,3 @@
-using JohnNightreign.Content;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using RoR2;
 

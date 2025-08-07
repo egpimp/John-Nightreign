@@ -10,8 +10,8 @@ namespace JohnNightreign.Entitystates
     {
         public int combo;
         public float duration;
-        public float recastGraceWindow = 0.5f;
-        private bool recast;
+        public static readonly float recastGraceWindow = 0.5f;
+        public bool recast;
         public static readonly float[] earlyExits = new float[] { 1.9f, 1.7f, 1.7f, 2f };
         public float earlyExit;
         public static readonly float[] damageCoefficients = new float[] { 3.5f, 3.5f, 4f, 4.5f };
@@ -35,7 +35,7 @@ namespace JohnNightreign.Entitystates
         public override void Update()
         {
             base.Update();
-            if (base.inputBank.skill1.down && base.fixedAge + 0.5f >= earlyExit) recast = true;
+            if (base.inputBank.skill1.down && base.fixedAge + recastGraceWindow >= earlyExit) recast = true;
         }
 
         public override void FixedUpdate()

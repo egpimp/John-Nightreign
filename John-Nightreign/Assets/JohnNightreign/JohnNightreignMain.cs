@@ -25,6 +25,7 @@ namespace JohnNightreign
             instance = this;
             pluginInfo = Info;
             new JohnNightreignContent();
+            Content.Assets.RegisterLanguage();
         }
 
         private void OnEnable()

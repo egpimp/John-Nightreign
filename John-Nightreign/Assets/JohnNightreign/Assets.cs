@@ -1,4 +1,7 @@
 using RoR2;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 
 namespace JohnNightreign.Content
 {
@@ -7,5 +10,18 @@ namespace JohnNightreign.Content
         internal static BuffDef stampBuffDef;
         internal static BuffDef revengeBuffDef;
         internal static BuffDef surviveBuffDef;
+
+        internal const string LangFolder = "jnr_language";
+        private static string RootLangFolderPath => System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), LangFolder);
+
+        internal static void RegisterLanguage()
+        {
+            if (Directory.Exists(RootLangFolderPath)) Language.collectLanguageRootFolders += RegisterTokensFolder;
+        }
+
+        internal static void RegisterTokensFolder(List<string> list)
+        {
+            list.Add(RootLangFolderPath);
+        }
     }
 }
