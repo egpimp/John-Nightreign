@@ -17,6 +17,7 @@ namespace JohnNightreign.Entitystates
         {
             step = i;
         }
+
         public override void OnEnter()
         {
             base.OnEnter();
@@ -40,6 +41,11 @@ namespace JohnNightreign.Entitystates
 
                 });
             }
+        }
+
+        public override InterruptPriority GetMinimumInterruptPriority()
+        {
+            return InterruptPriority.PrioritySkill;
         }
     }
 }
