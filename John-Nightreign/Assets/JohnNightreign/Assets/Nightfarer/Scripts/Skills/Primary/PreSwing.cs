@@ -32,7 +32,7 @@ namespace JohnNightreign.Entitystates
             {
                 if (base.fixedAge >= chargeThreshhold) outer.SetNextState(new HeavySwing()
                 {
-                    charge = maxCharge - base.fixedAge
+                    charge = base.fixedAge
                 });
                 else outer.SetNextState(new LightSwing()
                 {

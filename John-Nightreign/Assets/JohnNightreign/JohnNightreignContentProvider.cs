@@ -30,11 +30,10 @@ namespace JohnNightreign.Content
             _nightfarerSurvivorDef = _bundle.LoadAsset<SurvivorDef>("Nightfarer");
             _nightfarerBody = _bundle.LoadAsset<GameObject>("NightfarerBody");
             stampBuffDef = _bundle.LoadAsset<BuffDef>("NightfarerStamp");
-            revengeBuffDef = _bundle.LoadAsset<BuffDef>("NightfarerRevenge");
             surviveBuffDef = _bundle.LoadAsset<BuffDef>("NightfarerSurvive");
             JohnNightreignContentPack.survivorDefs.Add(new SurvivorDef[] { _nightfarerSurvivorDef });
             JohnNightreignContentPack.bodyPrefabs.Add(new GameObject[] { _nightfarerBody });
-            JohnNightreignContentPack.buffDefs.Add(new BuffDef[] { stampBuffDef, revengeBuffDef, surviveBuffDef });
+            JohnNightreignContentPack.buffDefs.Add(new BuffDef[] { stampBuffDef, surviveBuffDef });
         }
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)
         {

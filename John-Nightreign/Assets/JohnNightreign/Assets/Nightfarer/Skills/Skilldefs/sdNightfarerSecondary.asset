@@ -19,8 +19,8 @@ MonoBehaviour:
   icon: {fileID: 0}
   activationStateMachineName: Body
   activationState:
-    _typeName: EntityStates.Uninitialized, RoR2, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+    _typeName: JohnNightreign.Entitystates.PreStamp, JohnNightreign, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   interruptPriority: 1
   baseRechargeInterval: 1
   baseMaxStock: 1

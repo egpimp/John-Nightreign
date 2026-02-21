@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: sdNightfarerPassiveSurvive
   m_EditorClassIdentifier: 
   skillName: sdNightfarerPassiveSurvive
-  skillNameToken: PassiveSurvive
-  skillDescriptionToken: PassiveSurvive
+  skillNameToken: JNR_NIGHTFARER_PASSIVE0_NAME
+  skillDescriptionToken: JNR_NIGHTFARER_PASSIVE0_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 0}
   activationStateMachineName: 

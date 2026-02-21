@@ -8,7 +8,6 @@ namespace JohnNightreign.Content
     public static class Assets
     {
         internal static BuffDef stampBuffDef;
-        internal static BuffDef revengeBuffDef;
         internal static BuffDef surviveBuffDef;
 
         internal const string LangFolder = "jnr_language";
