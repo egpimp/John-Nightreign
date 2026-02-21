@@ -11,7 +11,7 @@ namespace JohnNightreign.Content
         internal static BuffDef surviveBuffDef;
 
         internal const string LangFolder = "jnr_language";
-        private static string RootLangFolderPath => System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), LangFolder);
+        internal static string RootLangFolderPath => System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), LangFolder);
 
         internal static void RegisterLanguage()
         {

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: sdNightfarerPrimary
   m_EditorClassIdentifier: 
   skillName: sdNightfarerPrimary
-  skillNameToken: JNR_NIGHTFARER_PRIMARY_NAME
-  skillDescriptionToken: JNR_NIGHTFARER_PRIMARY_DESC
+  skillNameToken: JNR_WYLDER_PRIMARY_NAME
+  skillDescriptionToken: JNR_WYLDER_PRIMARY_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 0}
   activationStateMachineName: Weapon

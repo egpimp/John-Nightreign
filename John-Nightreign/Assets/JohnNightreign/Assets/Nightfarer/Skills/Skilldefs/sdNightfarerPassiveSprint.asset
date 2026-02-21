@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: sdNightfarerPassiveSprint
   m_EditorClassIdentifier: 
   skillName: sdNightfarerPassiveSprint
-  skillNameToken: JNR_NIGHTFARER_PASSIVE1_NAME
-  skillDescriptionToken: JNR_NIGHTFARER_PASSIVE1_DESCRIPTION
+  skillNameToken: JNR_WYLDER_PASSIVE1_NAME
+  skillDescriptionToken: JNR_WYLDER_PASSIVE1_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 0}
   activationStateMachineName: 

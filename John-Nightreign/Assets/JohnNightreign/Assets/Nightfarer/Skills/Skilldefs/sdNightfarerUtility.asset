@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: sdNightfarerUtility
   m_EditorClassIdentifier: 
   skillName: sdNightfarerUtility
-  skillNameToken: JNR_NIGHTFARER_UTILITY_NAME
-  skillDescriptionToken: JNR_NIGHTFARER_UTILITY_DESC
+  skillNameToken: JNR_WYLDER_UTILITY_NAME
+  skillDescriptionToken: JNR_WYLDER_UTILITY_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 0}
   activationStateMachineName: Body
