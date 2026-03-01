@@ -64,6 +64,7 @@ GameObject:
   - component: {fileID: 763631439399457673}
   - component: {fileID: 6433054734762230335}
   - component: {fileID: 3334102648873571513}
+  - component: {fileID: 6455284058240587588}
   - component: {fileID: 4847544776752371312}
   - component: {fileID: 7809369826781325298}
   - component: {fileID: 2368622400751212667}
@@ -188,8 +189,8 @@ MonoBehaviour:
   BaseImportance: 0
   Importance: -1
   inLava: 0
-  baseNameToken: JNR_NIGHTFARER_BODY_NAME
-  subtitleNameToken: JNR_NIGHTFARER_BODY_DESC
+  baseNameToken: JNR_WYLDER_BODY_NAME
+  subtitleNameToken: JNR_WYLDER_BODY_DESC
   bodyFlags: 16
   lavaCooldown: 0.2
   rootMotionInMainState: 0
@@ -248,7 +249,7 @@ MonoBehaviour:
   aimOriginTransform: {fileID: 424352304705806608}
   hullClassification: 0
   portraitIcon: {fileID: 0}
-  bodyColor: {r: 0.37624598, g: 0.40330234, b: 0.8962264, a: 0}
+  bodyColor: {r: 0.047058824, g: 0.5686275, b: 0.6784314, a: 1}
   doNotReassignToTeamBasedCollisionLayer: 0
   isChampion: 0
   altDeathBodyName: 
@@ -340,7 +341,7 @@ MonoBehaviour:
   utility: {fileID: 2368622400751212667}
   special: {fileID: 5540399325861336652}
   passiveSkill:
-    enabled: 1
+    enabled: 0
     skillNameToken: JNR_NIGHTFARER_PASSIVE_NAME
     skillDescriptionToken: JNR_NIGHTFARER_PASSIVE_DESCRIPTION
     keywordToken: 
@@ -646,6 +647,24 @@ MonoBehaviour:
   skillName: Passive
   hideInCharacterSelect: 0
   baseStock: 0
+  baseRechargeStopwatch: 0
+  hasExecutedSuccessfully: 0
+--- !u!114 &6455284058240587588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761638053140501122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 298587437, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _skillFamily: {fileID: 11400000, guid: 993735cd9ff49bc429eb0546a9d54a0e, type: 2}
+  skillName: Sword
+  hideInCharacterSelect: 0
+  baseStock: 1
   baseRechargeStopwatch: 0
   hasExecutedSuccessfully: 0
 --- !u!114 &4847544776752371312

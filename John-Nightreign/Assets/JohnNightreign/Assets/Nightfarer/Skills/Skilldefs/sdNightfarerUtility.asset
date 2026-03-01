@@ -15,7 +15,8 @@ MonoBehaviour:
   skillName: sdNightfarerUtility
   skillNameToken: JNR_WYLDER_UTILITY_NAME
   skillDescriptionToken: JNR_WYLDER_UTILITY_DESCRIPTION
-  keywordTokens: []
+  keywordTokens:
+  - JNR_KEYWORD_IGNITION
   icon: {fileID: 0}
   activationStateMachineName: Body
   activationState:

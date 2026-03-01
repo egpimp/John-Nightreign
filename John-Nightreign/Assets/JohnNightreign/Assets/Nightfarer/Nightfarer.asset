@@ -20,6 +20,6 @@ MonoBehaviour:
   descriptionToken: Nightfarer
   outroFlavorToken: 
   mainEndingEscapeFailureFlavorToken: 
-  primaryColor: {r: 0, g: 0, b: 0, a: 0}
+  primaryColor: {r: 0.048059803, g: 0.5686275, b: 0.6792453, a: 1}
   desiredSortPosition: 0
   hidden: 0
