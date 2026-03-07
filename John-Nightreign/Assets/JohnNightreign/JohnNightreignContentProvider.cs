@@ -3,6 +3,8 @@ using UnityEngine;
 using RoR2;
 using System.Collections;
 using static JohnNightreign.Content.Assets;
+using RoR2.Skills;
+using JohnNightreign.Entitystates;
 
 namespace JohnNightreign.Content
 {
@@ -34,6 +36,7 @@ namespace JohnNightreign.Content
             JohnNightreignContentPack.survivorDefs.Add(new SurvivorDef[] { _nightfarerSurvivorDef });
             JohnNightreignContentPack.bodyPrefabs.Add(new GameObject[] { _nightfarerBody });
             JohnNightreignContentPack.buffDefs.Add(new BuffDef[] { stampBuffDef, surviveBuffDef });
+            JohnNightreignContentPack.entityStateTypes.Add(new System.Type[] { typeof(PreSwing), typeof(LightSwing), typeof(HeavySwing), typeof(PreStamp), typeof(Stamp) });
         }
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)
         {

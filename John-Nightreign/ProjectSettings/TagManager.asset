@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Colored
+  - BulletCollide
+  - InitialBurst
+  - Chest
+  - CamAttachPoint
+  - VoiceChatCard
+  - NexAssetsRankingParamText
+  - NexAssetsRankingHeaderText
+  - CreditsGroup
+  - NexAssetsRanking2HeaderText
+  - NexAssetsRanking2ParamText
   layers:
   - Default
   - TransparentFX
@@ -11,6 +22,8 @@ TagManager:
   - 
   - Water
   - UI
+  - Projectile Pierce
+  - SolusEye
   - FakeActor
   - NoCollision
   - Pickups
@@ -24,7 +37,7 @@ TagManager:
   - NoDraw
   - PrefabBrush
   - PostProcess
-  - UI, Worldspace
+  - UI, WorldSpace
   - PlayerBody
   - EnemyBody
   - TriggerZone
@@ -35,9 +48,6 @@ TagManager:
   - ProjectileWorldOnly
   - EnemyBarrier
   - PlayerFakeActor
-  - 
-  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0

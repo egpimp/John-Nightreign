@@ -1,5 +1,8 @@
 {
 	"strings": {
+		"JNR_SKILLFAMILY_SWORD_TITLE":"Sword",
+		"JNR_SKILLFAMILY_PASSIVE_TITLE": "Passive",
+		
 		"JNR_WYLDER_PASSIVE0_NAME":"Surge Sprint",
 		"JNR_WYLDER_PASSIVE0_DESCRIPTION":"After Sprinting for 2 seconds, gain a 25% bonus to your sprint speed, calculated after all other buffs.",
 		

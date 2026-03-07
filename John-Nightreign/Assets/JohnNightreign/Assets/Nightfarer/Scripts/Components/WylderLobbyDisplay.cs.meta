@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a17a45e2934db094fbf1c7ecacffd88a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bodyPrefab: {instanceID: 0}
+  - <networkUser>k__BackingField: {instanceID: 0}
+  - wylderSword: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

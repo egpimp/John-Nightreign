@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5760567883484494991}
   - component: {fileID: 664418295183920115}
+  - component: {fileID: 1712341456548488608}
   m_Layer: 0
   m_Name: NightfarerDisplay
   m_TagString: Player
@@ -58,6 +59,63 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1712341456548488608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761638053140501122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17a45e2934db094fbf1c7ecacffd88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyPrefab: {fileID: 761638053140501122, guid: ab9ff1fe19a2dfe41aad88bcc3402a04, type: 3}
+  skillChangeResponses:
+  - triggerSkillFamily: {fileID: 11400000, guid: 993735cd9ff49bc429eb0546a9d54a0e, type: 2}
+    triggerSkill: {fileID: 11400000, guid: 44ba2f77a469c2147ae7cc37206a003c, type: 2}
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1712341456548488608}
+          m_TargetAssemblyTypeName: WylderLobbyDisplay, JohnNightreign
+          m_MethodName: SetDefaultSword
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - triggerSkillFamily: {fileID: 11400000, guid: 993735cd9ff49bc429eb0546a9d54a0e, type: 2}
+    triggerSkill: {fileID: 11400000, guid: e177797d41d559741839bfa15137cfc8, type: 2}
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1712341456548488608}
+          m_TargetAssemblyTypeName: WylderLobbyDisplay, JohnNightreign
+          m_MethodName: SetDarkmoonSword
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  skinChangeResponses: []
+  wylderSword: {fileID: 11400000, guid: 993735cd9ff49bc429eb0546a9d54a0e, type: 2}
+  wylderSecondary: {fileID: 11400000, guid: 2b03fa7dcc3e4514fb8861f0aedd2a26, type: 2}
+  replacementSkills:
+  - {fileID: 11400000, guid: 17b8244d82898274284631cc90896f2a, type: 2}
+  - {fileID: 11400000, guid: a942171dabdab6f40ba431ffa218aa30, type: 2}
+  swordSkills:
+  - {fileID: 11400000, guid: 44ba2f77a469c2147ae7cc37206a003c, type: 2}
+  - {fileID: 11400000, guid: e177797d41d559741839bfa15137cfc8, type: 2}
 --- !u!1 &5788436775018154385
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +285,7 @@ MonoBehaviour:
   itemDisplayRuleSet: {fileID: 0}
   autoPopulateLightInfos: 1
   gameObjectActivationTransforms: []
+  customGameObjectActivationTransforms: []
   baseRendererInfos:
   - renderer: {fileID: 1178278316600428261}
     defaultMaterialAddress:
@@ -238,10 +297,15 @@ MonoBehaviour:
     ignoreOverlays: 0
     hideOnDeath: 0
     ignoresMaterialOverrides: 0
+  fullBodyPing: 0
   baseLightInfos: []
+  constraintItemDisplaysScale: 0
+  ignoreJitterBones: 0
   corpseFade: 1
+  speedFade: 1
   CharacterOnScreen: 0
   visibilityChecker: {fileID: 0}
+  useHullForFadeCalc: 0
   activeOverlays: 0
   oldOverlays: 0
   hitFlashValue: 0

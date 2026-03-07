@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1391837873, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-  m_Name: sdNightfarerSecondary
+  m_Name: sdNightfarerSecondaryGS
   m_EditorClassIdentifier: 
-  skillName: sdNightfarerSecondary
-  skillNameToken: JNR_WYLDER_SECONDARY_NAME
-  skillDescriptionToken: JNR_WYLDER_SECONDARY_DESCRIPTION
+  skillName: sdNightfarerSecondaryGS
+  skillNameToken: JNR_SWORDS_GREATSWORD_SKILL_NAME
+  skillDescriptionToken: JNR_SWORDS_GREATSWORD_SKILL_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 0}
   activationStateMachineName: Body

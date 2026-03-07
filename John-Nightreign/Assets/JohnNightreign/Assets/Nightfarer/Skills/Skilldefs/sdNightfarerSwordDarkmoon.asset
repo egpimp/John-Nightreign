@@ -17,9 +17,10 @@ MonoBehaviour:
   skillDescriptionToken: JNR_SWORDS_DARKMOON_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 0}
-  activationStateMachineName: 
+  activationStateMachineName: Weapon
   activationState:
-    _typeName: 
+    _typeName: JohnNightreign.Entitystates.PreSwing, JohnNightreign, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   interruptPriority: 1
   baseRechargeInterval: 1
   baseMaxStock: 1
@@ -40,4 +41,6 @@ MonoBehaviour:
   mustKeyPress: 0
   triggeredByPressRelease: 0
   autoHandleLuminousShot: 1
+  suppressSkillActivation: 0
   hideStockCount: 0
+  hideCooldown: 0

@@ -2,6 +2,8 @@ using BepInEx;
 using System.IO;
 using UnityEngine;
 using JohnNightreign.Content;
+using System.Security;
+using System.Security.Permissions;
 
 namespace JohnNightreign
 {
@@ -9,6 +11,7 @@ namespace JohnNightreign
     [BepInDependency("___riskofthunder.RoR2BepInExPack")]
     #endregion
     [BepInPlugin(GUID, MODNAME, VERSION)]
+    [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
     public class JohnNightreignMain : BaseUnityPlugin
     {
         public const string GUID = "com.egpimp.JohnNightreign";
