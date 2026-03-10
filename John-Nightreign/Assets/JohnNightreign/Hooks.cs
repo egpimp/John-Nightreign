@@ -25,11 +25,12 @@ namespace JohnNightreign
                 //combinedhealth is the health value made up of all barrier, health, shields at once, we could add a check against osp too but we can worry about that later
                 if (effectiveDamage > self.combinedHealth)
                 {
-                    //Change the damage to 0, add an invincibility buff, remove all DOT effects, and remove the buff that flags the passive as active
+                    //Change the damage to 0, add an invincibility buff, remove all DOT effects, and replace the buff that flags the passive as active
                     damageInfo.damage = 0;
                     self.body.AddTimedBuff(RoR2Content.Buffs.HiddenInvincibility, 3f);
                     self.body.RemoveBuff(Content.Assets.surviveBuffDef);
                     DotController.RemoveAllDots(self.gameObject);
+                    self.body.AddBuff(Content.Assets.surviveGoneBuffDef);
                 }
             }
             orig(self, damageInfo);

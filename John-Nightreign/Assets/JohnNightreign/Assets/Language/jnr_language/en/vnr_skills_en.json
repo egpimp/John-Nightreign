@@ -1,14 +1,10 @@
 {
 	"strings": {
 		"JNR_SKILLFAMILY_SWORD_TITLE":"Sword",
-		"JNR_SKILLFAMILY_PASSIVE_TITLE": "Passive",
 		
-		"JNR_WYLDER_PASSIVE0_NAME":"Surge Sprint",
-		"JNR_WYLDER_PASSIVE0_DESCRIPTION":"After Sprinting for 2 seconds, gain a 25% bonus to your sprint speed, calculated after all other buffs.",
-		
-		"JNR_WYLDER_PASSIVE1_NAME":"Sixth Sense",
-		"JNR_WYLDER_PASSIVE1_DESCRIPTION":"<style=cIsUtility>Once Per Run.</style> Automatically <style=cIsUtility>dodge</style> a lethal attack. Upon activation, you gain 3 seconds of <style=cIsDamage>invincibility</style>, and you are <style=cIsUtility>cleansed</style> of all debuffs.",
-		
+		"JNR_WYLDER_PASSIVE_NAME":"Nightfarer Prowess",
+		"JNR_WYLDER_PASSIVE_DESCRIPTION":"You have <style=cIsUtility>Sixth Sense</style>. After Sprinting for 2 seconds, gain a 25% bonus to your sprint speed, calculated after all other buffs.",
+				
 		"JNR_WYLDER_PRIMARY_NAME":"Greatsword Swing",
 		"JNR_WYLDER_PRIMARY_DESCRIPTION": "Swing your greatsword for <style=cIsDamage>300% damage.</style> Holding the skill button will charge a <style=cIsUtility>Heavy Attack,</style> dealing <style=cIsDamage>800% damage</style>.",
 		

@@ -1,6 +1,9 @@
 {
 	"strings": {
+		"JNR_KEYWORD_DEFAULTSKILL": "<style=cKeywordName>Skill</style><style=cSub>Stamp (Upward Cut).</style>", 
+		"JNR_KEYWORD_DARKMOONSKILL": "<style=cKeywordName>Skill</style><style=cSub>Moonlight Greatsword.</style>", 
+		"JNR_KEYWORD_SIXTHSENSE": "<style=cKeywordName>Sixth Sense</style><style=cSub>If you would take a lethal attack, instead <style=cIsUtility>dodge</style>, <style=cIsUtility>cleansing debuffs</style> and becoming <style=cIsUtility>invincible</style> for 3 seconds</style>",
 		"JNR_KEYWORD_IMMOVABLE": "<style=cKeywordName>Immovable</style><style=cSub><style=cIsUtility>Immune to knockback</style> and any other effects that may move you against your will.</style>",
-		"JNR_KEYWORD_IGNITION": "<style=cKeywordName>Ignition</style><style=cSub>While ignited, your greatsword hits deal an extra <style=cIsDamage>150% base damage</style>."
+		"JNR_KEYWORD_IGNITION": "<style=cKeywordName>Ignition</style><style=cSub>While ignited, your greatsword hits deal an extra <style=cIsDamage>150% base damage.</style>"
 	}
 }

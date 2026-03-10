@@ -16,8 +16,8 @@ namespace JohnNightreign.Content
         internal static ContentPack JohnNightreignContentPack { get; } = new ContentPack();
 
         private static AssetBundle _bundle;
-        private static SurvivorDef _nightfarerSurvivorDef;
-        private static GameObject _nightfarerBody;
+        private static SurvivorDef _wylderSurvivorDef;
+        private static GameObject _wylderBody;
 
         public IEnumerator LoadStaticContentAsync(LoadStaticContentAsyncArgs args)
         {
@@ -29,18 +29,39 @@ namespace JohnNightreign.Content
             }
 
             _bundle = asyncOperation.assetBundle;
-            _nightfarerSurvivorDef = _bundle.LoadAsset<SurvivorDef>("Nightfarer");
-            _nightfarerBody = _bundle.LoadAsset<GameObject>("NightfarerBody");
-            stampBuffDef = _bundle.LoadAsset<BuffDef>("NightfarerStamp");
-            surviveBuffDef = _bundle.LoadAsset<BuffDef>("NightfarerSurvive");
-            JohnNightreignContentPack.survivorDefs.Add(new SurvivorDef[] { _nightfarerSurvivorDef });
-            JohnNightreignContentPack.bodyPrefabs.Add(new GameObject[] { _nightfarerBody });
-            JohnNightreignContentPack.buffDefs.Add(new BuffDef[] { stampBuffDef, surviveBuffDef });
+            _wylderSurvivorDef = _bundle.LoadAsset<SurvivorDef>("Wylder");
+            _wylderBody = _bundle.LoadAsset<GameObject>("WylderBody");
+
+            stampBuffDef = _bundle.LoadAsset<BuffDef>("WylderStamp");
+            revengeBuffDef = _bundle.LoadAsset<BuffDef>("WylderRevenge");
+            surviveBuffDef = _bundle.LoadAsset<BuffDef>("WylderSurvive");
+            surviveGoneBuffDef = _bundle.LoadAsset<BuffDef>("WylderSurviveGone");
+
+            sfWylderPrimary = _bundle.LoadAsset<SkillFamily>("sfWylderPrimary");
+            sfWylderSecondary = _bundle.LoadAsset<SkillFamily>("sfWylderSecondary");
+            sfWylderUtility = _bundle.LoadAsset<SkillFamily>("sfWylderUtility");
+            sfWylderSpecial = _bundle.LoadAsset<SkillFamily>("sfWylderSpecial");
+            sfWylderSword = _bundle.LoadAsset<SkillFamily>("sfWylderSword");
+
+            sdWylderPrimary = _bundle.LoadAsset<SkillDef>("sdWylderPrimary");
+            sdWylderSecondary = _bundle.LoadAsset<SkillDef>("sdWylderSecondary");
+            sdWylderSecondaryGS = _bundle.LoadAsset<SkillDef>("sdWylderSecondaryGS");
+            sdWylderSecondaryDM = _bundle.LoadAsset<SkillDef>("sdWylderSecondaryDM");
+            sdWylderUtility = _bundle.LoadAsset<SkillDef>("sdWylderUtility");
+            sdWylderSpecial = _bundle.LoadAsset<SkillDef>("sdWylderSpecial");
+            sdWylderSwordDefault = _bundle.LoadAsset<SkillDef>("sdWylderSwordDefault");
+            sdWylderSwordDarkmoon = _bundle.LoadAsset<SkillDef>("sdWylderSwordDarkmoon");
+
+            JohnNightreignContentPack.survivorDefs.Add(new SurvivorDef[] { _wylderSurvivorDef });
+            JohnNightreignContentPack.bodyPrefabs.Add(new GameObject[] { _wylderBody });
+            JohnNightreignContentPack.skillFamilies.Add(new SkillFamily[] { sfWylderPrimary, sfWylderSecondary, sfWylderUtility, sfWylderSpecial, sfWylderSword } );
+            JohnNightreignContentPack.skillDefs.Add(new SkillDef[] { sdWylderPrimary, sdWylderSecondary, sdWylderSecondaryGS, sdWylderSecondaryDM, sdWylderUtility, sdWylderSpecial, sdWylderSwordDefault, sdWylderSwordDarkmoon } );
+            JohnNightreignContentPack.buffDefs.Add(new BuffDef[] { stampBuffDef, revengeBuffDef, surviveBuffDef, surviveGoneBuffDef });
             JohnNightreignContentPack.entityStateTypes.Add(new System.Type[] { typeof(PreSwing), typeof(LightSwing), typeof(HeavySwing), typeof(PreStamp), typeof(Stamp) });
         }
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)
         {
-             ContentPack.Copy(JohnNightreignContentPack, args.output);
+            ContentPack.Copy(JohnNightreignContentPack, args.output);
             args.ReportProgress(1f);
             yield break;
         }
