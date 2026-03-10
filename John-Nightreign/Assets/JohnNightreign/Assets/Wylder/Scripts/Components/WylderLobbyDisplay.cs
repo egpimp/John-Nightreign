@@ -99,8 +99,6 @@ public class WylderLobbyDisplay : CharacterSelectSurvivorPreviewDisplayControlle
                 }
             }
         }
-
-        Debug.Log("GGGS");
     }
 
     public void SetDarkmoonSword()
@@ -128,7 +126,6 @@ public class WylderLobbyDisplay : CharacterSelectSurvivorPreviewDisplayControlle
                 }
             }
         }
-        Debug.Log("DDM");
     }
 
     void QueueUpdate()

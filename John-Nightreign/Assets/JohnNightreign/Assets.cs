@@ -11,7 +11,9 @@ namespace JohnNightreign.Content
         internal static BuffDef stampBuffDef;
         internal static BuffDef revengeBuffDef;
         internal static BuffDef surviveBuffDef;
-        internal static BuffDef surviveGoneBuffDef;
+
+        internal static ItemDef idWylderPassive;
+        internal static ItemDef idWylderPassiveSpent;
 
         internal static SkillFamily sfWylderPrimary;
         internal static SkillFamily sfWylderSecondary;

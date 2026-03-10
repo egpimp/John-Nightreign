@@ -3,7 +3,9 @@
 		"JNR_SKILLFAMILY_SWORD_TITLE":"Sword",
 		
 		"JNR_WYLDER_PASSIVE_NAME":"Nightfarer Prowess",
-		"JNR_WYLDER_PASSIVE_DESCRIPTION":"You have <style=cIsUtility>Sixth Sense</style>. After Sprinting for 2 seconds, gain a 25% bonus to your sprint speed, calculated after all other buffs.",
+		"JNR_WYLDER_PASSIVE_DESCRIPTION":"You have <style=cIsUtility>Sixth Sense</style>. After Sprinting for 2 seconds, gain a 25% bonus to your base sprint speed.",
+		"JNR_WYLDER_PASSIVEITEM_NAME": "Sixth Sense",
+		"JNR_WYLDER_PASSIVEITEMSPENT_NAME": "Spent Sixth Sense",
 				
 		"JNR_WYLDER_PRIMARY_NAME":"Greatsword Swing",
 		"JNR_WYLDER_PRIMARY_DESCRIPTION": "Swing your greatsword for <style=cIsDamage>300% damage.</style> Holding the skill button will charge a <style=cIsUtility>Heavy Attack,</style> dealing <style=cIsDamage>800% damage</style>.",

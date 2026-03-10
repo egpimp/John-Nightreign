@@ -1,5 +1,6 @@
 using UnityEngine;
 using RoR2;
+using static JohnNightreign.Content.Assets;
 
 namespace JohnNightreign
 {
@@ -18,7 +19,7 @@ namespace JohnNightreign
         private static void HealthComponent_TakeDamage(On.RoR2.HealthComponent.orig_TakeDamage orig, HealthComponent self, DamageInfo damageInfo)
         {
             //Verify body should even be checked for if this should trigger, not nonlethal damage and has appropriate buff
-            if (self && self.body && self.body.HasBuff(Content.Assets.surviveBuffDef) && !((damageInfo.damageType.damageType & DamageType.NonLethal) == DamageType.NonLethal))
+            if (self && self.body && self.body.HasBuff(surviveBuffDef) && !((damageInfo.damageType.damageType & DamageType.NonLethal) == DamageType.NonLethal))
             {
                 //Calculate what the damage will be after armor
                 float effectiveDamage = damageInfo.damage * (1 - self.body.armor / (100 + Mathf.Abs(self.body.armor)));
@@ -28,9 +29,9 @@ namespace JohnNightreign
                     //Change the damage to 0, add an invincibility buff, remove all DOT effects, and replace the buff that flags the passive as active
                     damageInfo.damage = 0;
                     self.body.AddTimedBuff(RoR2Content.Buffs.HiddenInvincibility, 3f);
-                    self.body.RemoveBuff(Content.Assets.surviveBuffDef);
+                    self.body.RemoveBuff(surviveBuffDef);
                     DotController.RemoveAllDots(self.gameObject);
-                    self.body.AddBuff(Content.Assets.surviveGoneBuffDef);
+                    self.body.inventory.GiveItemPermanent(ItemCatalog.FindItemIndex("idWylderPassiveSpent"));
                 }
             }
             orig(self, damageInfo);

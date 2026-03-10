@@ -1,5 +1,6 @@
 using RoR2;
 using UnityEngine;
+using static JohnNightreign.Content.Assets;
 
 namespace JohnNightreign.Skills
 {
@@ -8,7 +9,7 @@ namespace JohnNightreign.Skills
     {
         private static readonly float originalMultiplier = 1.45f;
         private static readonly float sprintMultiplier = 1.70f;
-        private static readonly float sprintTimeRequired = 1.5f;
+        private static readonly float sprintTimeRequired = 2f;
         private float sprintStopwatch = sprintTimeRequired;
         private float previousMultiplier = 1.45f;
         public CharacterBody characterBody;
@@ -16,7 +17,7 @@ namespace JohnNightreign.Skills
 
         public void OnEnable()
         {
-            if (characterBody && !characterBody.HasBuff(Content.Assets.surviveBuffDef) && !characterBody.HasBuff(Content.Assets.surviveGoneBuffDef)) characterBody.AddBuff(Content.Assets.surviveBuffDef);
+            CheckSenseState();
         }
 
         public void FixedUpdate()
@@ -34,6 +35,19 @@ namespace JohnNightreign.Skills
 
             if (previousMultiplier != characterBody.sprintingSpeedMultiplier) characterBody.RecalculateStats();
             previousMultiplier = characterBody.sprintingSpeedMultiplier;
+
+            CheckSenseState();
+        }
+
+        void CheckSenseState()
+        {
+            Inventory inventory = characterBody.inventory;
+            if (!inventory || inventory.GetItemCountEffective(idWylderPassiveSpent) > 0) return;
+            if (inventory.GetItemCountEffective(idWylderPassive) > 0)
+            {
+                if (!characterBody.HasBuff(surviveBuffDef)) characterBody.AddBuff(surviveBuffDef);
+            }
+            else inventory.GiveItemPermanent(ItemCatalog.FindItemIndex("idWylderPassive"));
         }
     }
 }
