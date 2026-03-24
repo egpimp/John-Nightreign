@@ -1,8 +1,8 @@
 using EntityStates;
+using RoR2;
 using RoR2.Skills;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using static JohnNightreign.Content.Assets;
 
 namespace JohnNightreign.Entitystates
 {
@@ -12,6 +12,7 @@ namespace JohnNightreign.Entitystates
         public float chargeThreshhold = 0.2f;
         public float maxCharge = 1.2f;
         public static readonly float[] lightDurations = new float[] { 2.4f, 1.7f, 1.7f, 2f };
+        DamageTypeCombo damageType;
 
         void SteppedSkillDef.IStepSetter.SetStep(int i)
         {
@@ -20,9 +21,12 @@ namespace JohnNightreign.Entitystates
 
         public override void OnEnter()
         {
+            Debug.Log(step);
             base.OnEnter();
             SteppedSkillDef sd = (SteppedSkillDef)base.activatorSkillSlot.skillDef;
             sd.stepGraceDuration = lightDurations[step] + 1.5f;
+            damageType = DamageTypeCombo.GenericPrimary;
+            if (base.characterBody.HasBuff(bdWylderFrosted)) damageType.damageTypeExtended |= DamageTypeExtended.Frost;
         }
 
         public override void FixedUpdate()

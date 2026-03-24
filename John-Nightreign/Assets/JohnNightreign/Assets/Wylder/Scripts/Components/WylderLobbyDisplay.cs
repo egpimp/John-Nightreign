@@ -1,3 +1,4 @@
+using JohnNightreign.Content;
 using RoR2;
 using RoR2.Skills;
 using RoR2.UI;
@@ -76,12 +77,12 @@ public class WylderLobbyDisplay : CharacterSelectSurvivorPreviewDisplayControlle
 
     public void SetDefaultSword()
     {
+        SkillDef replacement = replacementSkills[0];
         for (int i = 0; i < BodyCatalog.skillSlots[(int)bodyIndex].Length; i++)
         {
             GenericSkill skill = BodyCatalog.skillSlots[(int)(bodyIndex)][i];
             if (skill.skillFamily && skill.skillFamily == wylderSecondary)
             {
-                SkillDef replacement = replacementSkills[0];
                 skill.skillFamily.variants[0].skillDef = replacement;
                 skill.skillDef = replacement;
                 BodyCatalog.skillSlots[(int)(bodyIndex)][i] = skill;
@@ -99,16 +100,17 @@ public class WylderLobbyDisplay : CharacterSelectSurvivorPreviewDisplayControlle
                 }
             }
         }
+        JohnNightreign.Content.Assets.sfWylderSecondary.variants[0].skillDef = replacement;
     }
 
     public void SetDarkmoonSword()
     {
+        SkillDef replacement = replacementSkills[1];
         for (int i = 0; i < BodyCatalog.skillSlots[(int)bodyIndex].Length; i++)
         {
             GenericSkill skill = BodyCatalog.skillSlots[(int)(bodyIndex)][i];
             if (skill.skillFamily && skill.skillFamily == wylderSecondary)
             {
-                SkillDef replacement = replacementSkills[1];
                 skill.skillFamily.variants[0].skillDef = replacement;
                 skill.skillDef = replacement;
                 BodyCatalog.skillSlots[(int)(bodyIndex)][i] = skill;
@@ -126,6 +128,7 @@ public class WylderLobbyDisplay : CharacterSelectSurvivorPreviewDisplayControlle
                 }
             }
         }
+        JohnNightreign.Content.Assets.sfWylderSecondary.variants[0].skillDef = replacement; 
     }
 
     void QueueUpdate()

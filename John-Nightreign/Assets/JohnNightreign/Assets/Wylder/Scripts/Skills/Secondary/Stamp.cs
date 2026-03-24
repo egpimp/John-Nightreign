@@ -7,6 +7,11 @@ namespace JohnNightreign.Entitystates
 {
     public class Stamp : BaseSkillState
     {
-
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            Debug.Log("Fuck.");
+            outer.SetNextStateToMain();
+        }
     }
 }

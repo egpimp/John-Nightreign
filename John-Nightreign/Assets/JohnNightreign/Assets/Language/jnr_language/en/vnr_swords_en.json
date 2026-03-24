@@ -3,11 +3,11 @@
 		"JNR_SWORDS_GREATSWORD_NAME": "Wylder's Greatsword",
 		"JNR_SWORDS_GREATSWORD_DESCRIPTION": "A single-edged greatsword that is tattered and dull.",
 		"JNR_SWORDS_GREATSWORD_SKILL_NAME": "Stamp (Upward Cut)",
-		"JNR_SWORDS_GREATSWORD_SKILL_DESCRIPTION": "Brace armament and step into a low stance that prevents recoil from most enemy attacks.  Follow up with a <style=cIsUtility>Primary Skill</style> input for an upward strike dealing <style=cIsDamage>750% damage</style>.",
+		"JNR_SWORDS_GREATSWORD_SKILL_DESCRIPTION": "Brace and step into a stance, becoming <style=cIsUtility>Implacable</style>. Using <style=cIsUtility>Primary Skill</style> during this unleashes an upward strike for <style=cIsDamage>750% damage</style>.",
 		
 		"JNR_SWORDS_DARKMOON_NAME": "Dark Moon Greatsword",
 		"JNR_SWORDS_DARKMOON_DESCRIPTION": "A <style=cIsUtility>Legendary Armament</style> bestowed by a Carian queen upon her spouse to honor long-standing tradition.",
 		"JNR_SWORDS_DARKMOON_SKILL_NAME": "Moonlight Greatsword",
-		"JNR_SWORDS_DARKMOON_SKILL_DESCRIPTION": "Raise the sword aloft, bathing it in the light of the dark moon. Temporarily imbues blade with <style=cIsUtility>frost</style> on hit, with charged attacks releasing blasts of moonlight for <style=cIsDamage>250% damage.</style>"
+		"JNR_SWORDS_DARKMOON_SKILL_DESCRIPTION": "Raise the sword aloft and become <style=cIsUtility>frost-touched</style> for a 10 seconds."
 	}
 }

@@ -1,26 +1,25 @@
 using EntityStates;
-using RoR2.Skills;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using RoR2;
 
 namespace JohnNightreign.Entitystates
 {
-    public class LightSwing : BaseSkillState
+    public class LightSwing : BaseState
     {
         public int combo;
         public float duration;
-        public static readonly float recastGraceWindow = 0.5f;
+        public static float recastGraceWindow = 0.5f;
         public bool recast;
-        public static readonly float[] earlyExits = new float[] { 1.9f, 1.7f, 1.7f, 2f };
+        public static float[] earlyExits = new float[] { 1.9f, 1.7f, 1.7f, 2f };
         public float earlyExit;
-        public static readonly float[] damageCoefficients = new float[] { 3.5f, 3.5f, 4f, 4.5f };
+        public static float[] damageCoefficients = new float[] { 3.5f, 3.5f, 4f, 4.5f };
         public float damageCoefficient;
-        public static readonly string[] hitboxGroups = new string[] { "SwingCmb1", "SwingCmb2", "SwingCmb3", "SwingCmb4" };
+        public static string[] hitboxGroups = new string[] { "SwingCmb1", "SwingCmb2", "SwingCmb3", "SwingCmb4" };
         public string hitboxGroup;
-        public static readonly string[] animNames = new string[] { "p1", "p2", "p3", "p4" };
+        public static string[] animNames = new string[] { "p1", "p2", "p3", "p4" };
         public string animName;
-        public static readonly float procCoefficient = 1f;
+        public static float procCoefficient = 1f;
+        public DamageTypeCombo damageType;
+        OverlapAttack attack;
 
         public override void OnEnter()
         {
@@ -30,12 +29,20 @@ namespace JohnNightreign.Entitystates
             hitboxGroup = hitboxGroups[combo];
             animName = animNames[combo];
             recast = false;
+            attack = InitMeleeOverlap(damageCoefficient, EntityStates.Merc.GroundLight.comboHitEffectPrefab, GetModelTransform(), hitboxGroup);
+            characterBody.SetAimTimer(duration + 2f);
         }
 
         public override void Update()
         {
             base.Update();
             if (base.inputBank.skill1.down && base.fixedAge + recastGraceWindow >= earlyExit) recast = true;
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+            attack.Fire();
         }
 
         public override void FixedUpdate()

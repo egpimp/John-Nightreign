@@ -7,13 +7,17 @@ namespace JohnNightreign.Skills
     [RequireComponent(typeof(CharacterBody))]
     public class WylderPassiveComponent : MonoBehaviour
     {
-        private static readonly float originalMultiplier = 1.45f;
-        private static readonly float sprintMultiplier = 1.70f;
-        private static readonly float sprintTimeRequired = 2f;
-        private float sprintStopwatch = sprintTimeRequired;
-        private float previousMultiplier = 1.45f;
+        float originalMultiplier = 1.45f;
+        float sprintMultiplier = 1.70f;
+        float sprintTimeRequired = 2f;
+        float sprintStopwatch;
+        float previousMultiplier = 1.45f;
         public CharacterBody characterBody;
-        static bool hasActivated;
+
+        public void Awake()
+        {
+            sprintStopwatch = sprintTimeRequired;
+        }
 
         public void OnEnable()
         {
@@ -45,7 +49,7 @@ namespace JohnNightreign.Skills
             if (!inventory || inventory.GetItemCountEffective(idWylderPassiveSpent) > 0) return;
             if (inventory.GetItemCountEffective(idWylderPassive) > 0)
             {
-                if (!characterBody.HasBuff(surviveBuffDef)) characterBody.AddBuff(surviveBuffDef);
+                if (!characterBody.HasBuff(bdWylderSurvive)) characterBody.AddBuff(bdWylderSurvive);
             }
             else inventory.GiveItemPermanent(ItemCatalog.FindItemIndex("idWylderPassive"));
         }

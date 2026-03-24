@@ -32,9 +32,10 @@ namespace JohnNightreign.Content
             _wylderSurvivorDef = _bundle.LoadAsset<SurvivorDef>("Wylder");
             _wylderBody = _bundle.LoadAsset<GameObject>("WylderBody");
 
-            stampBuffDef = _bundle.LoadAsset<BuffDef>("WylderStamp");
-            revengeBuffDef = _bundle.LoadAsset<BuffDef>("WylderRevenge");
-            surviveBuffDef = _bundle.LoadAsset<BuffDef>("WylderSurvive");
+            bdWylderStamp = _bundle.LoadAsset<BuffDef>("WylderStamp");
+            bdWylderFrosted = _bundle.LoadAsset<BuffDef>("WylderFrosted");
+            bdWylderIgnited = _bundle.LoadAsset<BuffDef>("WylderIgnited");
+            bdWylderSurvive = _bundle.LoadAsset<BuffDef>("WylderSurvive");
 
             idWylderPassive = _bundle.LoadAsset<ItemDef>("idWylderPassive");
             idWylderPassiveSpent = _bundle.LoadAsset<ItemDef>("idWylderPassiveSpent");
@@ -58,9 +59,9 @@ namespace JohnNightreign.Content
             JohnNightreignContentPack.bodyPrefabs.Add(new GameObject[] { _wylderBody });
             JohnNightreignContentPack.skillFamilies.Add(new SkillFamily[] { sfWylderPrimary, sfWylderSecondary, sfWylderUtility, sfWylderSpecial, sfWylderSword } );
             JohnNightreignContentPack.skillDefs.Add(new SkillDef[] { sdWylderPrimary, sdWylderSecondary, sdWylderSecondaryGS, sdWylderSecondaryDM, sdWylderUtility, sdWylderSpecial, sdWylderSwordDefault, sdWylderSwordDarkmoon } );
-            JohnNightreignContentPack.buffDefs.Add(new BuffDef[] { stampBuffDef, revengeBuffDef, surviveBuffDef });
+            JohnNightreignContentPack.buffDefs.Add(new BuffDef[] { bdWylderStamp, bdWylderFrosted, bdWylderIgnited, bdWylderSurvive });
             JohnNightreignContentPack.itemDefs.Add(new ItemDef[] { idWylderPassive, idWylderPassiveSpent });
-            JohnNightreignContentPack.entityStateTypes.Add(new System.Type[] { typeof(PreSwing), typeof(LightSwing), typeof(HeavySwing), typeof(PreStamp), typeof(Stamp) });
+            JohnNightreignContentPack.entityStateTypes.Add(new System.Type[] { typeof(PreSwing), typeof(LightSwing), typeof(HeavySwing), typeof(PreStamp), typeof(Stamp), typeof(Darkmoon) });
         }
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)
         {

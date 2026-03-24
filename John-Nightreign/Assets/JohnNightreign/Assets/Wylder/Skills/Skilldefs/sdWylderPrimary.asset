@@ -43,6 +43,6 @@ MonoBehaviour:
   autoHandleLuminousShot: 1
   suppressSkillActivation: 0
   hideStockCount: 1
-  hideCooldown: 0
+  hideCooldown: 1
   stepCount: 4
   stepGraceDuration: 1.6

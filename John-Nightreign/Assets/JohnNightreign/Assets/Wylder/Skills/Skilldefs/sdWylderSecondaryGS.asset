@@ -15,7 +15,9 @@ MonoBehaviour:
   skillName: sdWylderSecondaryGS
   skillNameToken: JNR_SWORDS_GREATSWORD_SKILL_NAME
   skillDescriptionToken: JNR_SWORDS_GREATSWORD_SKILL_DESCRIPTION
-  keywordTokens: []
+  keywordTokens:
+  - JNR_KEYWORD_IMPLACABLE
+  - JNR_KEYWORD_IMMOVABLE
   icon: {fileID: 0}
   activationStateMachineName: Body
   activationState:

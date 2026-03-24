@@ -17,6 +17,6 @@
 		"JNR_WYLDER_UTILITY_DESCRIPTION": "Fire your Claw Shot for <style=cIsDamage>100% Damage</style> and pull yourself towards it.  Activating the Primary Skill button during the pull performs a sweep for <style=cIsDamage>500% damage</style>, <style=cIsDamage>igniting</style> your sword for 10 seconds.",
 		
 		"JNR_WYLDER_SPECIAL_NAME": "Onslaught Stake",
-		"JNR_WYLDER_SPECIAL_DESCRIPTION": "Charge up a spike, gaining <style=cIsUtility>Immovable</style> and <style=cIsUtility>50% + 100 Armor</style>. After charging, lunge forward with a massive explosion dealing <style=cIsDamage>1000% damage</style> and stunning enemies hit for 3 seconds."
+		"JNR_WYLDER_SPECIAL_DESCRIPTION": "Charge up a spike, gaining <style=cIsUtility>Immovable</style> and <style=cIsUtility>50% + 100 Armor</style>. After charging, lunge forward with a massive explosion dealing <style=cIsDamage>1000% damage</style> and <style=cIsUtility>stunning</style> enemies hit for 3 seconds."
 	}
 }

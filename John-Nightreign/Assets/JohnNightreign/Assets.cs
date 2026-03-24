@@ -8,9 +8,10 @@ namespace JohnNightreign.Content
 {
     public static class Assets
     {
-        internal static BuffDef stampBuffDef;
-        internal static BuffDef revengeBuffDef;
-        internal static BuffDef surviveBuffDef;
+        internal static BuffDef bdWylderStamp;
+        internal static BuffDef bdWylderFrosted;
+        internal static BuffDef bdWylderIgnited;
+        internal static BuffDef bdWylderSurvive;
 
         internal static ItemDef idWylderPassive;
         internal static ItemDef idWylderPassiveSpent;

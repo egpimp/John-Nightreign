@@ -3,7 +3,9 @@
 		"JNR_KEYWORD_DEFAULTSKILL": "<style=cKeywordName>Skill</style><style=cSub>Stamp (Upward Cut).</style>", 
 		"JNR_KEYWORD_DARKMOONSKILL": "<style=cKeywordName>Skill</style><style=cSub>Moonlight Greatsword.</style>", 
 		"JNR_KEYWORD_SIXTHSENSE": "<style=cKeywordName>Sixth Sense</style><style=cSub>If you would take a lethal attack, instead <style=cIsUtility>dodge</style>, <style=cIsUtility>cleansing debuffs</style> and becoming <style=cIsUtility>invincible</style> for 3 seconds.</style>",
-		"JNR_KEYWORD_IMMOVABLE": "<style=cKeywordName>Immovable</style><style=cSub><style=cIsUtility>Immune to knockback</style> and any other effects that may move you against your will.</style>",
+		"JNR_KEYWORD_IMPLACABLE": "<style=cKeywordName>Implacable</style><style=cSub><style=cIsUtility>Immovable</style>, and damage taken is limited to <style=cIsHealing>20% of your max health</style> until you lose this effect</style>",
+		"JNR_KEYWORD_IMMOVABLE": "<style=cKeywordName>Immovable</style><style=cSub>Cannot move, but <style=cIsUtility>immune to all knockback</style></style>",
+		"JNR_KEYWORD_FROSTTOUCH": "<style=cKeywordName>Frost-Touch</style><style=cSub>While frost-touched, your greatsword applies <style=cIsUtility>frost</style> on hit, and charged attacks release blasts of moonlight for <style=cIsDamage>250% damage</style>.</style>",
 		"JNR_KEYWORD_IGNITION": "<style=cKeywordName>Ignition</style><style=cSub>While ignited, your greatsword hits deal an extra <style=cIsDamage>150% base damage.</style>"
 	}
 }

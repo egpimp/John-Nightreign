@@ -16,14 +16,15 @@ MonoBehaviour:
   skillNameToken: JNR_SWORDS_DARKMOON_SKILL_NAME
   skillDescriptionToken: JNR_SWORDS_DARKMOON_SKILL_DESCRIPTION
   keywordTokens:
+  - JNR_KEYWORD_FROSTTOUCH
   - KEYWORD_FROST
   icon: {fileID: 0}
   activationStateMachineName: Body
   activationState:
-    _typeName: JohnNightreign.Entitystates.PreStamp, JohnNightreign, Version=0.0.0.0,
+    _typeName: JohnNightreign.Entitystates.Darkmoon, JohnNightreign, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interruptPriority: 1
-  baseRechargeInterval: 1
+  baseRechargeInterval: 16
   baseMaxStock: 1
   rechargeStock: 1
   requiredStock: 1
@@ -39,7 +40,7 @@ MonoBehaviour:
   forceSprintDuringState: 0
   canceledFromSprinting: 0
   isCombatSkill: 1
-  mustKeyPress: 0
+  mustKeyPress: 1
   triggeredByPressRelease: 0
   autoHandleLuminousShot: 1
   suppressSkillActivation: 0
